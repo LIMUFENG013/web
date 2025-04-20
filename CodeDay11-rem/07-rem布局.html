@@ -1,0 +1,25 @@
+<!-- rem配合flexible布局 -->
+ <!-- 核心原理:根据不同的视口宽度给网页中html跟节点设置不同的font-size -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rem布局</title>
+  <style>
+    /* 68 * 29 */
+    /* 查看设计稿宽度px——确定参考设备宽度(视口宽度)——确定基准根字号(1/10) */
+    /* rem尺寸 : rem单位的尺寸 = px单位数值/基准根字号 */
+    div {
+      width: 1.813rem;
+      height: 0.773rem;
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <script src="./js/flexible.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!-- 使用flex-direction改变元素排列方向 flex-direction
+    默认:主轴是水平方向,侧轴是垂直方向
+  flex-direction属性:
+  row 行,水平(默认值)
+  column 列,垂直 (重要)
+  row-reverse 行,从右向左
+  column-reverse 列,从上到下 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        .box li {
+            display: flex;
+            /* 主轴改变为侧轴 */
+            flex-direction: column;
+
+            /* 实现视觉效果:实现盒子水平居中 */
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            border: 1px solid #ccc;
+        }
+
+        .box img {
+            width: 32px;
+            height: 32px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                <img src="./xiaotuxian/images/dianfanguo.png" alt="">
+                <span>媒体</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!-- 
+ 弹性盒子宽度不够默认会在一行排列 
+ 目标:使用flex-wrap实现弹性盒子多行排列效果
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            display: flex;
+
+            /* 换行 */
+            flex-wrap: wrap;
+            /* 调整行的对齐方式,默认是行距平均分 
+            跟 justify-content:center/space-around/space-between 
+            基本一致*/
+            align-content: flex-start;
+            height: 500px;
+            border: 1px solid #000;
+        }
+        .box div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>

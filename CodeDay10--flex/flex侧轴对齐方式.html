@@ -1,0 +1,50 @@
+<!-- aligns-items调节元素在侧轴(垂直方向)的对齐方式
+ 方式:
+ align-items(添加到弹性容器)
+ align-self(控制某个弹性盒子在侧轴的对齐方式)
+ 属性:
+ flex-start:默认值,起点开始依次排列
+ flex-end:终点(父级盒子最下面)开始依次排列
+ center:沿侧轴居中排列
+ stretch:默认值,弹性盒子沿着主轴线被拉伸至铺满容器
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            display: flex;
+            justify-content: space-evenly;
+            align-items:center;
+            /* 子级盒子有高度就不会拉伸 */
+            /* align-items:stretch; */
+            height: 300px;
+            margin: auto;
+            border: 1px solid #000;
+        }
+        .box div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        .box div:nth-child(3) {
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

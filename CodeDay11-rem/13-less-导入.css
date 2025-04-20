@@ -1,0 +1,16 @@
+/* 导入less公共样式文件
+语法: 导入@import "文件路径"
+提示: 如果是less文件可以省略后缀
+*/
+.father {
+  color: red;
+  width: 1.81333333rem;
+}
+.father .son {
+  height: 0.77333333rem;
+}
+/* 快捷键 shift+alt+A
+  这是块注释
+  允许换行
+*/
+ 
