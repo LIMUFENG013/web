@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    switch (4) {
+      case 1:
+        console.log('您选择的是1')
+        break  //退出switch
+      case 2:
+        console.log('您选择的是2')
+        break
+      case 3:
+        console.log('您选择的是3')
+        break
+      default:
+        console.log('没有符合条件的')
+    }
+
+    let num1 = +prompt('请输入第一个数字')
+    let num2 = +prompt('请输入第二个数字')
+    let sign = prompt('请输入符号(+/-)进行计算')
+
+    switch (sign) {
+      case '+':
+        alert('计算结果:' + (num1 + num2))
+        break
+      case '-':
+        alert('计算结果:' + (num1 - num2))
+        break
+      default:
+        alert('请输入正确的符号')
+    }
+  </script>
+</body>
+
+</html>

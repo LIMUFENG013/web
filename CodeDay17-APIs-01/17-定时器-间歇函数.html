@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- 
+场景:网页中的倒计时
+
+开启定时器: setInterval(函数名,间隔时间)
+作用:每隔一段时间调用这个函数,间隔时间单位为毫秒
+
+-->
+
+<body>
+  <script>
+    // setInterval(function () {
+    //   document.writeln('间隔1s, 调用一次定时函数')
+    // }, 1000)
+
+    function fn() {
+      console.log('间隔1s, 调用一次定时函数')
+    }
+    //开启定时器
+    let n = setInterval(fn, 1000)
+    console.log(n)
+    //关闭定时器(关闭几号)
+    clearInterval(n)
+  </script>
+</body>
+
+</html>

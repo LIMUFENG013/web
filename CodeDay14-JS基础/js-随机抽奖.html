@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    function removeRandomItem(arr) {
+      //1.生成随机索引 Math.random:0-1的随机小数 Math.floor:向下取整
+      //2.删除该索引对应的元素，并返回被删除的元素
+      const randomIndex = Math.floor(Math.random() * arr.length);
+      return arr.splice(randomIndex, 1)[0];
+    }
+    //随机抽奖,中奖用户需要从数组中删除,不允许重复抽奖
+    const myArray = [1, 2, 3, 4, 5];
+    const removedItem = removeRandomItem(myArray);
+    console.log(removedItem); // 随机的一个元素
+    console.log(myArray); // 剩下的数组 
+
+  </script>
+</body>
+
+</html>

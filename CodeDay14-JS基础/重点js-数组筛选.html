@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 筛选数组中 大于等于10 的数并存放在新数组中
+    let arr = [2, 0, 6, 1, 77, 0, 52, 0, 25, 7]
+    let newarr = []
+    for (let i = 0; i <= arr.length; i++) {
+      if (arr[i] >= 10) {
+        newarr.push(arr[i])
+      }
+    }
+    document.writeln(newarr)
+    //删除数组中的数据
+    //数组.pop()方法删除数组最后一个元素,并返回删除的值
+    //数组.shift()删除第一个元素
+    let arr2 = [1, 2, 3, 4, 5, 6, 7, 8]
+    console.log(arr2.pop())
+    console.log(arr2)
+    arr2.shift()
+    console.log(arr2)
+
+    //splice(start,deleteCount)方法,起始位置开始,删除几个元素
+    let arr3 = [1, 2, 3, 4, 5]
+    arr3.splice(2, 1)
+    console.log(arr3)
+  </script>
+</body>
+
+</html>

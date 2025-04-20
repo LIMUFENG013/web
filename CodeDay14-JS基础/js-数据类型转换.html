@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- 隐式转换
+加号两边有一个字符串,都会把另一边转成字符串
+除了+以外的算数运算符,比如* / - ,都会把数据转成数字类型
+-->
+
+<!-- 显式转换 
+
+-->
+
+<body>
+  <script>
+    //隐式转换 会输出pink1, 1上会加上引号'1'
+    console.log('pink' + 1)
+    // 显式转换
+    // parseInt转换成整数  parseFloat转换成浮点数
+    let str = '123'
+    console.log(Number(str))
+    let num = Number(prompt('请输入年薪'))
+    console.log(typeof num)
+
+    console.log(parseInt(125.5))
+
+  </script>
+</body>
+
+</html>

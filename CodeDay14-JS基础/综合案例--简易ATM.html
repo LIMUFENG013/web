@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let balance = 0
+    while (true) {
+      let re = +prompt(`
+        请选择你的操作:
+        1.存钱
+        2.取钱
+        3.查看余额
+        4.退出`)
+
+      if (re === 1) {
+        let money = +prompt('请输入您要存多少钱')
+        balance += money
+        alert(`存钱成功,目前余额为${balance}`)
+      }
+
+
+      if (re === 2) {
+        let jian = +prompt('请输入您要取多少钱')
+        if (balance >= jian) {
+          balance -= jian
+          alert(`取钱成功,目前余额为${balance}`)
+        }
+        else {
+          alert(`取钱失败,余额不足`)
+        }
+      }
+
+      if (re === 3) {
+        alert(`当前账户余额为${balance}`)
+      }
+
+      if (re === 4) {
+        break
+      }
+    }
+  </script>
+</body>
+
+</html>

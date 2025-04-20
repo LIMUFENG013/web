@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 有参
+    function getSum(m, n) {
+      // let n = +prompt('输入第一位数')
+      // let m = +prompt('输入第一位数')
+      alert(`两数之和为${m + n}`)
+    }
+    getSum(3, 5)
+    // 从1加到x的总和
+    let sum = 0
+    function getSumX(x, y) {
+      for (let i = x; i <= y; i++) {
+        sum += i
+      }
+      alert(`从${x}加到${y}的和为${sum}`)
+    }
+    getSumX(300, 1000)
+
+  </script>
+</body>
+
+</html>

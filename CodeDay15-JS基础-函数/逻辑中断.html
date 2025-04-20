@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // console.log(false && age++) 一假则假
+    console.log(11 && 22) //逻辑与 都是真,则返回最后一个
+    console.log(11 || 22) //逻辑或 都是真,则返回第一个
+
+    function fn(x, y) {
+      x = 1 || 0 //只要左边为真,就中断
+      y = 2 || 0
+      console.log(x + y)
+    }
+    fn(1, 2)
+  </script>
+</body>
+
+</html>
