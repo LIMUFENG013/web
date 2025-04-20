@@ -1,0 +1,59 @@
+<!-- 边框圆角 
+ 场景: 让盒子四个角变得圆润,增加页面细节,提升用户体验
+ 属性名；border-radius
+ 常见取值:数字+px,百分比
+ 赋值规则:从左上角开始赋值,然后顺时针赋值,没有赋值的看对角
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yuanjiao{
+            margin: 50px auto;
+            width: 180px;
+            height: 180px;
+            background-color: pink;
+            border-radius:20px 20px;
+            padding: 10px;
+        }
+        /* 画一个正圆
+        1.盒子必须是正方形
+        2.设置边框圆角为盒子宽高的一半
+        */
+        .zhengyuan {
+            margin: 50px auto;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border-radius: 50%;
+            /* 设置 display: flex 的元素称为 Flex 容器，
+            它的直接子元素会自动成为 Flex 项目（Flex Items） 
+            容器中有主轴和交叉轴来控制Flex项目位置  */
+            display: flex;
+            /* 水平对齐 */
+            justify-content: center;
+            /* 垂直对齐 */
+            align-items: center;
+        }
+        /* 胶囊状 */
+        .jiaonang {
+            margin: 50px auto;
+            width: 400px;
+            height: 200px;
+            background-color: pink;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="yuanjiao">div</div>
+    <div class="zhengyuan">div</div>
+    <div class="jiaonang">div</div>
+</body>
+</html>

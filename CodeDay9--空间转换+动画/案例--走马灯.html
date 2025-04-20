@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        li {
+            list-style: none;
+        }
+        .img {
+            width: 200px;
+        }
+        .box {
+            position: relative;
+            width: 600px;
+            height: 112px;
+            border: 5px solid #000;
+            margin: 100px auto;
+            overflow: hidden; /* 隐藏超出部分 */
+        }
+        .box ul {
+            width: 2000px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: move 5s linear infinite;
+        }
+        .box li {
+            float: left;
+        }
+        /* 定义动画:位移,ul 左侧移动 x-1400*/
+        @keyframes move {   
+                0% {
+                    transform: translate(0px);
+                }
+                100% {
+                    transform: translate(-1400px);
+            }
+        }
+        /* 用户鼠标移入box,动画暂停 */
+        .box:hover ul{
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li><img src="../CodeDay9--空间转换+动画/img/iloveimg-resized/bbq.png" alt=""></li>
+            <li><img src="../CodeDay9--空间转换+动画/img/iloveimg-resized/buding.png" alt=""></li>
+            <li><img src="../CodeDay9--空间转换+动画/img/iloveimg-resized/caoben.png" alt=""></li>
+            <li><img src="../CodeDay9--空间转换+动画/img/iloveimg-resized/cheese.png" alt=""></li>
+            <li><img src="../CodeDay9--空间转换+动画/img/iloveimg-resized/guojiang.png" alt=""></li>
+            <li><img src="../CodeDay9--空间转换+动画/img/iloveimg-resized/sousi.png" alt=""></li>
+            <li><img src="../CodeDay9--空间转换+动画/img/iloveimg-resized/sugar.png" alt=""></li>
+
+            <li><img src="../CodeDay9--空间转换+动画/img/iloveimg-resized/bbq.png" alt=""></li>
+            <li><img src="../CodeDay9--空间转换+动画/img/iloveimg-resized/buding.png" alt=""></li>
+            <li><img src="../CodeDay9--空间转换+动画/img/iloveimg-resized/caoben.png" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>

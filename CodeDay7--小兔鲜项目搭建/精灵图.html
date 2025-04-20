@@ -1,0 +1,57 @@
+<!-- 精灵图
+ 场景:项目中将多个小图片,合并成一张大图,这张大图被称为精灵图
+ 优点:减少服务器发送次数,减轻服务区压力,提高页面加载速度
+-->
+
+<!-- 
+1.创建一个盒子,设置盒子尺寸和小图尺寸相同
+2.将精灵图设置为盒子的背景图片
+3.修改背景图位置,通过PxCode测量小图片左上角坐标,分别取值负值
+设置给盒子的background-position:x y
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            display: inline-block;
+            width: 56px;
+            height: 47px;
+            background-color: rgb(197, 93, 110);  
+            background-image: url(../study/images/精灵图.png);
+            /* 改变背景图位置 水平位置 垂直方向的位置*/
+            background-position: -3px 0;
+            background-repeat: no-repeat;
+        }
+        b {
+            /* width和height是从背景图的左上角开始截图的,所以
+            背景图位置实际上要往上顶,所以垂直是负数 往左移所以水平负数*/
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-color: rgb(197, 93, 110);  
+            background-image: url(../study/images/精灵图.png);
+            /* 改变背景图位置 水平位置 垂直方向的位置*/
+            background-position: -16px -61px;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <!-- 精灵图标签一般都用行内标签 -->
+    <span></span>
+    <b></b>
+</body>
+</html>
+
+<!-- 在你的代码中，background-color 和 background-image 同时存在时，它们的显示规则如下：
+
+background-image 会覆盖 background-color
+如果背景图片（background-image）没有透明部分（即图片是完全不透明的），那么 background-color 会被完全覆盖，用户看不到背景颜色。
+
+1.如果背景图片有透明部分
+2.如果背景图片有透明区域（例如 PNG 格式的图片），
+那么 background-color 会透过透明部分显示出来。 -->

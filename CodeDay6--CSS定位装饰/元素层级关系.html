@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+        }
+        .one {
+            position: absolute;
+            left: 20px;
+            top: 50px;
+            background-color: pink;
+            /* 层级等级 */
+            z-index: 1;
+        }
+        .two {
+            position: absolute;
+            left: 50px;
+            top: 20px;
+            background-color: skyblue;
+            z-index: 2;
+        }
+    </style>
+</head>
+<!--1.不同布局方式的层级关系:
+    标准流<浮动<定位
+    2.不同定位之间的层级关系:
+    相对 绝对 固定默认层级相同
+    此时HTML中写在下面的元素层级更高,会覆盖上面的元素
+-->
+<body>
+    <!-- 俩定位标签 是 后面压前面。
+        z-index:整数;取值越大显示顺序越靠上,z-index默认是0(配合定位生效)
+    -->
+    <div class="two">two</div>
+    <div class="one">one</div>
+</body>
+</html>

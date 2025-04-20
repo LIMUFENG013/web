@@ -1,0 +1,52 @@
+<!-- 平面转换 (位移,旋转,缩放) -->
+ <!-- 位移
+  transform:translate(水平移动距离,垂直移动距离)
+  取值正负均可(像素、百分比参考自身盒子尺寸计算)
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>位移-基本使用</title>
+    <style>
+        .father {
+            position: relative;
+            width: 500px;
+            height: 300px;
+            margin: 100px auto;
+            border: 1px solid #000;
+        }
+
+        .son {
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            left: 50%;
+            top: 50%;
+            /* 改变盒子位置 使盒子居中(2方法) */
+            /* margin-left: -100px;
+            margin-top: -50px; */
+            transform: translate(-50%,-50%);
+            background-color: pink;
+            /* 过渡 */
+            transition: all 0.5s;
+        }
+
+        /* 鼠标移入到父盒子.son改变位置 */
+        .father:hover .son {
+            transform: translate(50px,100px);
+            transform: translate(-50px,-100px);
+            transform: translate(-50%,-100%);
+            /* 单独方向移动 */
+            transform: translateX(50%);
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!-- 过度: 鼠标放在图片上 图片上文字慢慢向上走.让元素样式慢慢的变化,
+ 常配合hover使用,增强网页交互体验.
+
+ 属性名: transition
+
+ 常见取值: 过渡的属性:all:所有能过渡的属性都过渡,具体属性名如width:只有width过渡
+ 过渡的时长: 数字+s (秒)
+
+ 注意点:
+ 1.过渡需要:默认状态和hover状态样式不同,才能有过渡效果
+ 2.transition属性给需要过渡的元素本身加
+ 3.transition属性设置在不同状态中,效果不同
+ ① 给默认状态设置,鼠标移入移出都有过渡效果
+ ② 给hover状态设置,鼠标移入移出有过渡效果,移出没有过渡效果
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 配合hover使用,谁变化谁加过渡属性 */
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 从宽度200到鼠标悬停600慢慢变化,花费一秒钟 */
+            /* transition: width 1s,background-color 1s; */
+            transition: all 1s;
+        }
+        .box:hover {
+            width: 600px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html> 

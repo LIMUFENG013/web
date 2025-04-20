@@ -1,0 +1,30 @@
+<!-- 使用rotate实现元素空间旋转效果 -->
+<!-- 语法: transform:rotateZ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 200px;
+            margin: 100px auto;
+        }
+        img {
+            width: 300px;
+            transition: all 2s;
+        }
+        /* 沿Z轴即中心点旋转 */
+        .box img:hover {
+            transform: rotateZ(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../pictures/windmill.png" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            display: block;
+            height: 400px;
+            text-decoration: none;
+            color: #000;
+        }
+        ul li {
+            float: left;
+            width: 200px;
+            height: 40px;
+            border-right: 1px solid #ccc;
+            box-sizing: border-box;
+            text-align: center;
+            list-style-type: none;
+        }
+        ul li .app {
+            position: relative;
+        }
+        .code {
+            position: absolute;
+            left: 50%;
+            top: 50px;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">我要投资</a></li>
+            <li><a href="#">平台介绍</a></li>
+            <li><a href="#">新手专区</a></li>
+            <!-- 因为用户鼠标放在二维码图片上也能跳转,
+             所以证明img也是在a的范围内,因此把img写在a标签的内部 -->
+            <li><a href="#" class="app">手机微金所<img src="../study/images/自学考试.jpg" alt="" width="80" height="40" class="code"></a></li>
+            <li class="last"><a href="#">个人中心</a></li>
+        </ul>
+    </div>
+</body>
+</html>

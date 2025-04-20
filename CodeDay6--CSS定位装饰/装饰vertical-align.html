@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            vertical-align: bottom;
+        }
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+        }
+        .father input {
+            vertical-align: top;
+        }
+    </style>
+</head>
+<!-- 垂直对齐 -->
+<!-- 基线: 浏览器文字类型元素排版中存在用于对齐的基线-->
+ <body>
+    <img src="../study/images/学成在线.png" alt=""><input type="text">
+    <!-- 文字对齐 :
+        场景:解决行内块元素垂直问题
+        问题:当图片和文字在一行中显示,其底部不是对齐的
+        属性名:vertical-align
+        属性值: baseline 默认,基线对齐
+                top 顶部对齐
+                middle 中部对齐
+                bottom 底部对齐
+    -->
+    <div class="father"><input type="text"></div>     
+</body>
+</html>

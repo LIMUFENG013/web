@@ -1,0 +1,32 @@
+<!-- perspective属性实现 透视 效果
+ 近大远小 近实远虚 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* 相当于人眼离屏幕的距离 近大远小*/
+            perspective: 1000px;
+            perspective: 200px;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            background-color: pink;
+            transition: all .5s;
+        }
+        .box:hover {
+            transform: translateZ(200px);
+            transform: translateZ(-200px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!-- 背景图大小
+作用 :设置背景图大小
+语法: background-size:宽 高;
+取值:数字+px、百分比、
+contant 包含,将背景图片等比例缩放,直到不会超出盒子大小、
+cover 赋高,将背景图片等比例缩放,直到刚好填满整个盒子
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 300px;
+            background-color: pink;
+            /* 图片不再复制 */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url(../study/images/自学考试.jpg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+<!-- 背景的连写 -->
+<!-- background:color image repeat position/size -->

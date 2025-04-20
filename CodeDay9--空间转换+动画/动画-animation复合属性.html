@@ -1,0 +1,44 @@
+<!-- 
+animation:动画名称 动画时长 速度曲线 延迟时间 重复次数 动画方向 执行完毕时间状态;
+注意: 
+1.动画名称和动画时长必须赋值
+2.取值不分先后顺序
+3.如果有两个时间值,第一个时间表示动画时长,第二个时间表示延迟时间
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            /* 名称 时长 匀速曲线  分步动画 延迟时间 重复次数*/
+            /* animation: change 1s linear 1s steps(3); */
+            /* 重复播放5次 */
+            /* animation: change 1s steps(3) 5 ; */
+            /* infinite 无限循环 动画方向:反向*/
+            /* animation: change 1s infinite alternate; */
+
+            /* backwards是默认值,动画播放完停留在最初状态 */
+            /* forwards 停留在最后的状态 */
+            animation: change 1s backwards;
+            animation: change 1s forwards;
+        }
+        @keyframes change {
+            from {
+                width: 200px;
+            }
+            to {
+                width: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

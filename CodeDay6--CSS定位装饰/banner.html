@@ -1,0 +1,32 @@
+<!-- 案例:设计 底部半透明遮罩效果 -->
+ <!-- 注意:定位的元素会脱标,脱标后的元素宽高默认由内容撑开 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner {
+            position: relative;
+            margin: 0 auto;
+            width: 1226px;
+            height: 600px;
+        }
+        .mask {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 1226px;
+            height: 150px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="../study/images/资格考试.jpg" alt="" width="1226" height="600">
+        <div class="mask">111</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!-- 旋转: transform:rotate(角度) 角度单位是deg 
+ 取值正负均可 取正顺时针 取负逆时针-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            width: 250px;
+            transition: all 2s;
+        }
+        img:hover {
+            transform: rotate(-3600deg);
+        }
+        .origin {
+            width: 250px;
+            border: 1px solid #000;
+            transition: all 2s;
+            transform-origin: right bottom;
+        }
+        .origin:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<!-- transform-origin属性改变转换原点 -->
+<!-- 语法: 默认圆点是盒子中心点 -->
+<!-- transform-origin:原点水平位置 原点垂直位置; 
+    取值:方位名词(left,top,right,bottom,center)
+         像素-->
+<body>
+    <img src="../xtx-pc-client/images/xtxlogo.png" alt="">
+    <img src="../xtx-pc-client/images/xtxlogo.png" alt="" class="origin">
+</body>
+</html>

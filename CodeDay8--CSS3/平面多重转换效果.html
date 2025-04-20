@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 800px;
+            height: 200px;
+            border: 1px solid #000;
+        }
+        img {
+            display: block;
+            margin-top: 30px;
+            width: 100px;
+            height: 100px;
+            transition: all 5s;
+        }
+        .box:hover img {
+            transform: translate(650px) rotate(1440deg);
+        }
+    </style>
+</head>
+<!-- 多重转换技巧
+    transform:translate() rotate();
+               水平位移距离/转几圈
+-->
+<body>
+    <div class="box">
+        <img src="./20250317/luntai.png" alt="">
+    </div>
+</body>
+</html>

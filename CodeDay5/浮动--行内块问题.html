@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* 不能完美解决 */
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+        }
+        .one {
+            background-color: pink;
+        }
+        .two {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<!-- 浮动:让块级标签在一行排列
+浏览器解析行内块或行内标签时,标签换行会产生空白间距
+-->
+<body>
+    <div class="one">123</div><div class="two">321</div>
+</body>
+</html>
