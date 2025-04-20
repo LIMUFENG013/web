@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 1000px;
+            height: 1500px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+        /* p{
+            text-align: center;
+        } */
+        .center {
+            text-align: center;
+        }
+        .color01 {
+            color: #808080;
+        }
+        .color02 {
+            color: #87ceeb;
+            font-weight: 700;
+        }
+        /* 缩近两个字符 */
+        .text-indent {
+            text-indent: 2em;
+        }
+    </style>
+</head>
+<body>
+    <!-- 标签水平居中 margin:0 auto 
+     可以通过margin:0 auto;实现
+    注意点:
+    1.如果需要让 div p h(大盒子)水平居中,直接给当前元素本身设置即可
+    2.margin:0 auto一般针对于固定宽度的盒子,如果大盒子没有设置宽度,
+    此时会默认占满元素的高度。
+    -->
+    <div>
+        <h1 class="center"><自然>评选改变科学的10个代码项目</h1>
+        <p class="center">
+            <span>2077年01月28日14:28</span>
+            <span class="color01">新浪科技</span>
+            <a href="" class="color02">收藏本文</a>
+        </p>
+        <hr>       
+        <p class="text-indent">段落一</p>
+        <p class="text-indent">段落二</p>
+        <p class="text-indent">段落三</p>
+    </div>
+</body>
+</html>

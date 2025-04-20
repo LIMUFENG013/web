@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100px;
+            height: 100px;
+        }
+
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- 块级元素
+    1.独占一行
+    2.宽度默认是父元素的宽度,高度默认由内容撑开
+    3.可设置宽高
+    div p h系列 ul li dl dt dd form header nav footer
+    -->
+
+    <!-- 行级元素
+    1.一行显示多个
+    2.宽度和高度默认由内容撑开
+    3.不可以设置宽高
+    a spar b u i s strong ins em del
+    -->
+    <span>aaa</span>
+    <span>bbb</span>
+
+    <!-- 行内块元素
+    1.一行也可以显式多个
+    2.可以设置宽高
+    input textarea button select 
+    -->
+    <img src="../pictures/粉.webp" alt="">
+    <img src="../pictures/star.jpg" alt="">
+
+    <!-- 元素显示模式转换
+    目的:改变元素默认的显示特点,让元素符合布局要求
+    语法: display:block 转成块级元素
+        display:inline-block 转成行内块元素
+        display:line 转成行内元素
+    -->
+        <br>
+    <div>123456</div>
+</body>
+</html>

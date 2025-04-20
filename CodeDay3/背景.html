@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 400px;
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .background01{
+            width: 2000px;
+            height: 2000px;
+            background-color: pink;
+            background-image: url(../pictures/star.jpg);
+            background-position: -50px 40px;
+            background-repeat: no-repeat;
+        }
+
+        .background02{
+            width: 3000px;
+            height: 3000px;
+            background-color: aqua;
+            background-repeat: no-repeat;
+            background-image:url(../pictures/粉.webp) ;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <!-- background-color (bgc) 
+     属性值: 颜色取值: 关键字 rgb表示法 rgba表示法 十六进制
+     注意点:1.背景颜色默认是透明: rgba(0,0,0,0) transparent
+            2.背景颜色不会影响盒子大小,并且还能看清盒子的大小和位置,
+            一般在布局中会习惯先给盒子设置背景颜色
+    -->
+    <div>div</div>
+
+    <!-- 背景图片 background-image (bgi)
+    属性值: background-image:url('图片的路径');
+    注意点:1.背景图片中url中可以省略引号
+           2.背景图片默认是在水平和垂直方向平铺的
+           3.背景图片仅仅是指给盒子起到装饰效果,类似于背景颜色
+    -->
+    <div class="background01">文字</div>
+
+    <!-- 背景平铺 background-repeat (bgr) 
+    属性值: repeat (默认值)水平和垂直方向都平铺
+            no-repeat 不平铺
+            repeat-x 沿着水平方向(x轴)平铺
+            repeat-y 沿着垂直方向(y轴)平铺 
+    -->
+    <div class="background02"></div>
+
+    <!-- 背景位置 background-position (bgp)
+    属性值: 1.方位名词 水平:left center right 垂直:top center bottom
+    2.数字+px(坐标):坐标系: 原点(0,0)--盒子左上角 x轴--水平向右 y轴--垂直向下
+    操作: 将图片左上角与坐标点重合即可
+    -->
+    
+    <!-- 连写 background:color image repeat positior -->
+
+</body>
+</html>

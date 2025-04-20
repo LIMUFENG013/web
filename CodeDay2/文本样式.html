@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .text-indent {
+        /* 首行缩进两个字大小 */
+        text-indent: 2em;
+      }
+      .text-align {
+        text-align: center;
+      }
+      .text-align-left {
+        text-align: left;
+      }
+      .text-align-right {
+        text-align: right;
+      }
+      .font-style {
+        font-style: italic;
+      }
+      .text-decoration-underline {
+        text-decoration: underline;
+      }
+      .text-decoration-overline {
+        text-decoration: overline;
+      }
+      .text-decoration-linethrough {
+        text-decoration: line-through;
+      }
+      .text-decoration-none {
+        text-decoration: none;
+      }
+      /* 给图居中 */
+      /* body {
+        text-align: center;
+      } */
+       /* 清除浮动(即文字不会环绕图片) */
+       body {
+        overflow: auto;
+       }
+
+       p{
+        font: italic 100 20px/2 宋体;
+       }
+    </style>
+</head>
+<body>
+    <!-- 
+    1.文本缩进:text-indent 
+    取值:数字+px  数字+em(推荐 1em=当前标签的font-size的大小,一个字大小)
+    -->
+    <p class="text-indent">2018年，单依纯参加歌唱节目《我想和你唱》 [4] [39]。2020年，单依纯以专业第一名的成绩考入浙江音乐学院 [42]。同年11月，单依纯获得音乐节目《中国好声音2020》年度总冠军，
+        从而正式进入演艺圈 [34]；获得冠军后她受邀为张艺谋的电影《一秒钟》演唱推广曲《给电影人的情书》 [152]。2021年，单依纯相继发布单曲《在夜里跳舞》 
+        [50]《爱我的时候》 [51]《分身》 [52]《喂》等 [53]。同年9月，单依纯为电视剧《一生一世》演唱主题曲《续写》 [54]，该歌曲入围第二届澳涞坞国际电视节金萱奖最佳歌曲名单 
+        [55]。2022年1月，单依纯发行首张个人专辑《勇敢额度》 [158]；同年11月，单依纯荣获第29届东方风云榜“最佳新锐歌手”奖 [21]。2023年7月18日，
+        发布电视剧《我的人间烟火》回忆主题曲《想你时风起 》 [25]；同年，单依纯参加《2023年中央广播电视总台春节联欢晚会》 [22]；并举办了她的首次个人演唱会 [70]。2024年，
+        单依纯连续第二年参加中央广播电视总台《2024年春节联欢晚会》，与海来阿木共同演唱歌曲《不如见一面》 [33]；在随后的《2024年中央广播电视总台元宵晚会》中，
+        单依纯与毛不易合唱歌曲《见信如晤》 [35]。</p>
+    <!-- 
+    2.水平对齐 text-align 
+    关键字: left左对齐 center居中对齐 right右对齐  
+    如果要让文本水平居中,text-align属性给文本所在标签(文本的父元素)设置 
+    text-align:center能让 =>1.文本 2.span标签,a标签 3.input标签,img标签 
+
+    -->
+    <p class="text-align font-style" >从而正式进入演艺圈 [34]；获得冠军后她受邀为张艺谋的电影《一秒钟》演唱推广曲《给电影人的情书》 [152]。2021年，单依纯相继发布单曲《在夜里跳舞》 
+      [50]《爱我的时候》 [51]《分身》 [52]《喂》等 [53]。同年9月，单依纯为电视剧《一生一世》演唱主题曲《续写》 [54]，该歌曲入围第二届澳涞坞国际电视节金萱奖最佳歌曲名单 
+      [55]。2022年1月，单依纯发行首张个人专辑《勇</p>
+
+      <img src="../pictures/star.jpg"  width="150" 
+      alt="Left Floating Image" style="float: left;" >
+
+      <!-- 3.文本修饰 text-decoration
+      关键字:underline下划线 line-through删除线 overline上划线 none无装饰线
+      开发中使用: text-decoration:none 清除a标签默认的下划线
+      -->
+      <div class="text-decoration-underline">woshi div</div>
+      <p class="text-decoration-linethrough">pppp</p>
+      <h2 class="text-decoration-overline">h2</h2>
+      <a href="#" class="text-decoration-none">我是超链接,点我</a>
+
+      <!-- 4.行高 line-height
+       取值: 数字+px / 倍数
+       应用:1.让单行文本垂直居中可以设置line-height:文字父元素高度
+           2.网页精准布局,会设置 line-height:1 可以取消上下间距
+       注意:如果行高与font连写,注意覆盖问题
+       font:style weight size/line-height family;  
+      -->
+</body>
+</html>

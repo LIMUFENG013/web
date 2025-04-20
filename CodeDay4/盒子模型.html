@@ -1,0 +1,37 @@
+<!-- 盒子概念
+浏览器在渲染(显示)网页时,会将网页中的元素看做是一个个的矩形区域,形象称为盒子 
+
+盒子模型
+CSS中规定每个盒子分别由:内容区域(content) 内边距区域(padding) 边框区域(border)
+外边距区域(margin) 构成 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 纸箱了,填充泡沫 */
+        div {
+            /* 盒子的高度和宽度 */
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            /* 边框线 单个取值的连写,取值之间以空格隔开
+            快捷键:bd+tab
+            */
+            border: 1px solid #000;
+            /* 内边距 */
+            padding: 20px;
+            /* 外边距:出现在盒子外面 */
+            margin:50px;
+        }
+    </style>
+</head>
+<body>
+    <div>内容电脑</div>
+    <div>内容电脑</div> 
+</body>
+</html>
